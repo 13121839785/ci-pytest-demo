@@ -2,11 +2,10 @@ name: Python CI
 
 on:
   push:
-    branches:
-      - '**'
+    branches: [ "**" ]
   pull_request:
-    branches:
-      - '**'
+    branches: [ "**" ]
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -21,7 +20,16 @@ jobs:
         python-version: '3.10'
 
     - name: 安装依赖
-      run: pip install -r requirements.txt
+      run: |
+        pip install -r requirements.txt
+        pip install pytest-html
 
-    - name: 执行 pytest 测试
-      run: pytest
+    - name: 运行测试并生成 HTML 报告
+      run: pytest --html=report.html
+
+    - name: 上传 HTML 报告
+      uses: actions/upload-artifact@v4
+      with:
+        name: pytest-report
+        path: report.html
+
