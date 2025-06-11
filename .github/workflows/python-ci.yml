@@ -21,8 +21,9 @@ jobs:
 
       - name: 安装依赖
         run: |
-            pip install -r requirements.txt
-            pip list  # ✅ 添加这一行用于调试确认安装成功
+          pip install -r requirements.txt
+          pip install pytest-html
+          pip list  # 可选：用于调试，确认 pytest-html 已安装
 
       - name: 执行 pytest 生成报告
         run: pytest tests --html=report.html --self-contained-html
