@@ -27,8 +27,9 @@ jobs:
     - name: 运行测试并生成 HTML 报告
       run: pytest --html=report.html
 
-    - name: 上传报告
-      uses: actions/upload-artifact@v3
+    - name: 上传 HTML 报告
+      uses: actions/upload-artifact@v4
       with:
         name: pytest-report
         path: report.html
+
