@@ -20,7 +20,9 @@ jobs:
           python-version: '3.10'
 
       - name: 安装依赖
-        run: pip install -r requirements.txt
+        run: |
+            pip install -r requirements.txt
+            pip list  # ✅ 添加这一行用于调试确认安装成功
 
       - name: 执行 pytest 生成报告
         run: pytest tests --html=report.html --self-contained-html
