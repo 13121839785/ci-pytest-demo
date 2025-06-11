@@ -2,34 +2,34 @@ name: Python CI
 
 on:
   push:
-    branches: [ "**" ]
+    branches: ['**']
   pull_request:
-    branches: [ "**" ]
+    branches: ['**']
 
 jobs:
   build:
     runs-on: ubuntu-latest
 
     steps:
-    - name: 拉取代码
-      uses: actions/checkout@v2
+      - name: 拉取代码
+        uses: actions/checkout@v2
 
-    - name: 设置 Python
-      uses: actions/setup-python@v4
-      with:
-        python-version: '3.10'
+      - name: 设置 Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.10'
 
-    - name: 安装依赖
-      run: |
-        pip install -r requirements.txt
-        pip install pytest-html
+      - name: 安装依赖
+        run: |
+          pip install -r requirements.txt
+          pip install pytest-html
+          pip list  # 可选：用于调试，确认 pytest-html 已安装
 
-    - name: 运行测试并生成 HTML 报告
-      run: pytest --html=report.html
+      - name: 执行 pytest 生成报告
+        run: pytest tests --html=report.html --self-contained-html
 
-    - name: 上传 HTML 报告
-      uses: actions/upload-artifact@v4
-      with:
-        name: pytest-report
-        path: report.html
-
+      - name: 上传测试报告 artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: test-report
+          path: report.html
