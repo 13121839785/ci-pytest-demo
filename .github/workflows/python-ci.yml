@@ -1,4 +1,4 @@
-name: Python CI
+name: Python CI with Allure
 
 on:
   push:
@@ -22,14 +22,15 @@ jobs:
       - name: 安装依赖
         run: |
           pip install -r requirements.txt
-          pip install pytest-html
-          pip list  # 可选：用于调试，确认 pytest-html 已安装
+          pip install allure-pytest
+          pip list  # 可选
 
-      - name: 执行 pytest 生成报告
-        run: pytest tests --html=report.html --self-contained-html
+      - name: 执行 Pytest（生成 Allure 报告原始数据）
+        run: |
+          pytest tests --alluredir=report/allure-results
 
-      - name: 上传测试报告 artifact
-        uses: actions/upload-artifact@v4
+      - name: 上传 Allure 报告 artifact
+        uses: actions/upload-artifact@v3
         with:
-          name: test-report
-          path: report.html
+          name: allure-results
+          path: report/allure-results

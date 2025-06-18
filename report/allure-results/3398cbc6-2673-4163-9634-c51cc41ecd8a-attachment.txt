@@ -1,0 +1,2 @@
+🌐 获取测试用 token（来自 fixture）
+✅ 使用缓存 token

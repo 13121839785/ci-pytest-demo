@@ -1,0 +1,4 @@
+✅ 使用缓存 token
+
+📄 状态码： 200
+📄 响应体： {'email': 'alice@example.com', 'role': 'tester', 'username': 'alice'}

@@ -1,0 +1,11 @@
+🌐 获取测试用 token（来自 fixture）
+🔐 正在发起登录请求...
+🚀 准备创建用户（自动带清理）
+✅ 用户创建成功，ID：None
+🧹 测试结束，开始删除用户 ID：None
+🗑️ 删除响应：404 - <!doctype html>
+<html lang=en>
+<title>404 Not Found</title>
+<h1>Not Found</h1>
+<p>The requested URL was not found on the server. If you entered the URL manually please check your spelling and try again.</p>
+

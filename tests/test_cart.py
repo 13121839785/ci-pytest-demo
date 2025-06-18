@@ -13,13 +13,14 @@ def test_add_items_to_cart(driver):
     # 登录
     login.open()
     login.login("standard_user", "secret_sauce")
+    sleep(2)
 
     # 添加两个商品
     inventory.add_product_by_name("Sauce Labs Backpack")
-    driver.save_screenshot("after_add_to_cart_1.png")
+    # driver.save_screenshot("after_add_to_cart_1.png")
     time.sleep(2)
     inventory.add_product_by_name("Sauce Labs Bike Light")
-    driver.save_screenshot("after_add_to_cart_2.png")
+    # driver.save_screenshot("after_add_to_cart_2.png")
     time.sleep(2)
 
     # 进入购物车

@@ -1,0 +1,10 @@
+base_url: "http://127.0.0.1:5000"
+username: "alice"
+password: "123456"
+
+log:
+  level: INFO        # 可选 DEBUG / INFO / WARNING / ERROR
+  retention: 7 days  # 保留天数
+  rotation: 10 MB    # 每个文件最大大小
+
+

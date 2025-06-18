@@ -1,0 +1,10 @@
+✅ 使用缓存 token
+🎯 当前测试用的 token 是: token-alice
+✅ 使用缓存 token
+【完整响应信息】
+状态码： 200
+头信息： {'Server': 'Werkzeug/3.1.3 Python/3.13.0', 'Date': 'Mon, 16 Jun 2025 09:47:34 GMT', 'Content-Type': 'application/json', 'Content-Length': '65', 'Connection': 'close'}
+响应体（text）： {"email":"alice@example.com","role":"tester","username":"alice"}
+
+响应体（json）： {'email': 'alice@example.com', 'role': 'tester', 'username': 'alice'}
+请求URL： http://127.0.0.1:5000/user/profile

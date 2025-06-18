@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/.idea/saucedemo_test.iml" filepath="$PROJECT_DIR$/.idea/saucedemo_test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/ci-pytest-demo.iml" filepath="$PROJECT_DIR$/.idea/ci-pytest-demo.iml" />
     </modules>
   </component>
 </project>

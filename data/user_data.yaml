@@ -1,0 +1,28 @@
+add_user:
+  - name: "Tom"
+    email: "tom@example.com"
+
+  - name: "Lucy"
+    email: "lucy@example.com"
+
+  - name: ""
+    email: "missing_name@example.com"
+
+  - name: "NoEmail"
+    email: ""
+
+  - name: "Charlie"
+    email: "charlie@example.com"
+
+login_test:
+  - username: "alice"
+    password: "123456"
+    expected_code: 200
+
+  - username: "bob"
+    password: "password"
+    expected_code: 200
+
+  - username: "wronguser"
+    password: "wrongpass"
+    expected_code: 401
