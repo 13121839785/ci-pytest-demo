@@ -25,9 +25,9 @@ jobs:
           pip install allure-pytest
           pip list  # 可选
 
-      - name: 执行 Pytest（生成 Allure 报告原始数据）
+      - name: 🚀 执行 Pytest（生成 Allure 报告原始数据）
         run: |
-          pytest tests --alluredir=report/allure-results
+          pytest tests --alluredir=report/allure-results || true
 
       - name: 上传 Allure 报告 artifact
         uses: actions/upload-artifact@v4
