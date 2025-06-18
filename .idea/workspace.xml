@@ -5,38 +5,7 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="3aca7888-eaf4-4764-9940-6c1f60ddd52e" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/api/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common/auth_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/api/common/config_util.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/config/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/data/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_add.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_add_param.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_delete.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_info.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_lifecycle.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_list.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_profile_fixture.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_profile_no_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_profile_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_profile_wrong_token.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_user_update.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/__init__.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/exceptions.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/utils/logger.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.github/workflows/python-ci.yml" beforeDir="false" afterPath="$PROJECT_DIR$/.github/workflows/python-ci.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore/.idea/ci-pytest-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/.idea/ci-pytest-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore/.idea/modules.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/ci-pytest-demo.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/ci-pytest-demo.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/requirements.txt" beforeDir="false" afterPath="$PROJECT_DIR$/requirements.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_cart.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_cart.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
