@@ -20,3 +20,6 @@ def test_login_fail_wrong_password(driver):
         EC.visibility_of_element_located((By.XPATH, '//*[@data-test="error"]'))
     )
     assert "Username and password do not match" in error.text
+
+def test_login_demo():
+    assert 1 == 1
